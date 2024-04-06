@@ -1,0 +1,34 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+    "title": 11,
+    "details": null,
+    "maximumAttendees": 1
+}
+
+###
+
+POST http://localhost:3333/events/b179fed7-7d9d-47f3-9ca5-556f927f3b36/attendees
+Content-Type: application/json
+
+{
+    "name": "Luã Sodre",
+    "email": "lussasssd@gmail.com"
+}
+
+###
+
+GET http://localhost:3333/events/b179fed7-7d9d-47f3-9ca5-556f927f3b36
+
+###
+
+GET http://localhost:3333/attendees/6/badge
+
+###
+
+GET http://localhost:3333/attendees/6/check-in
+
+###
+
+GET http://localhost:3333/events/4af63d93-96a1-4826-b067-572f27fcbc83/attendees?
